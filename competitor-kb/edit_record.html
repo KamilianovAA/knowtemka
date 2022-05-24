@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Knowtemka</title> 
+  <link rel="stylesheet" href="index_style.css"> 
+</head>
+<body>
+  <div class="navbar">
+    <a class="title"  href="index.html">Knowtemka</a>
+    <a class="navbar_link" href="add_record.html">Добавить</a>
+    <a class="navbar_link" href="search.html">Поиск</a>
+    <a class="navbar_link" href="auto_docs.html">Автоматизированное выявление объектов мониторинга</a>
+    <div class="registration">
+      <button class="reg_btn" onclick="location.href='login.html';">ВХОД</button>
+      <button class="reg_btn" onclick="location.href='registration.html';">РЕГИСТРАЦИЯ</button>
+    </div>
+  </div>
+  <div class="main">
+    <section>
+      <div class="column_align_flex">
+        <div class="left_align_flex">
+          <div class="item">
+            <p>Укажите тип досье</p>
+            <select id="record-type">
+              <option>Досье на персону</option>
+              <option>Досье на организацию</option>
+            </select>
+          </div>
+          <div class="item">
+            <p>Наименование организации/ФИО персоны</p>
+            <input class="item" id="name" type="text">
+          </div>
+        </div>
+        <h3>Изображения, связанные с объектом мониторинга</h3>
+        <div class="column_align_flex">
+          <div id="gallery" class="row"></div>
+          <!-- The expanding image container -->
+          <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+            <!-- Image text -->
+            <div id="imgtext"></div>
+          </div>
+        </div>
+        <div class="column_align_flex">
+          <p>Добавить изображения</p>
+          <div id="img-preview"></div>
+          <input class="item" id="picture" type="file" multiple accept="image/*">
+        </div>
+        <h3>Документы, связанные с объектом мониторинга</h3>
+        <div class="column_align_flex">
+          <div id="doc-list" class="column_align_flex"></div>
+        </div>        
+        <div class="column_align_flex">
+          <p>Добавить документы</p>
+          <input class="item" id="documents" type="file" multiple>
+        </div>        
+        <h3>Факты, связанные с объектом наблюдения</h3> 
+        <div id="attr-list" class="column_align_flex"></div> 
+        <div class="column_align_flex">
+          <button id="attribute_btn" onclick="addAttributeWithDelete()">Добавить факты, связанные с объектом наблюдения</button>          
+        </div>      
+        <div class="btn_flex">     
+          <button class="btn" onclick="editRecord()">Внести изменения</button>
+        </div>
+      </div>             
+    </section>  
+  </div>
+</body> 
+<script src="website_logic.js"></script>
+<script src="img_preview.js"></script>
+<script src="edit.js"></script>
+</html>

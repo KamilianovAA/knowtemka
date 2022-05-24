@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Knowtemka</title> 
+  <link rel="stylesheet" href="index_style.css"> 
+</head>
+<body>
+  <div class="navbar">
+    <a class="title"  href="index.html">Knowtemka</a>
+    <a class="navbar_link" href="add_record.html">Добавить</a>
+    <a class="navbar_link" href="search.html">Поиск</a>
+    <a class="navbar_link" href="auto_docs.html">Автоматизированное выявление объектов мониторинга</a>
+    <div class="registration">        
+        <button class="reg_btn" onclick="location.href='registration.html';">РЕГИСТРАЦИЯ</button>
+    </div>
+  </div>
+  <div class="main">
+    <section>
+      <div class="column_align_flex">
+        <form class="column_align_flex">       
+          <label for="login">Логин</label>
+          <input name="login" id="login" type="text">
+          <label for="login">Пароль</label>
+          <input name="password" id="password" type="password">
+          <input name="submit" value="Войти" type="submit">
+        </form>
+      </div>      
+    </section>  
+  </div>
+</body>
+<script src="website_logic.js"></script>
+</html>

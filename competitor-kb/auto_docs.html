@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Knowtemka</title> 
+  <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a class="title"  href="index.html">Knowtemka</a>
+    <a class="navbar_link" href="add_record.html">Добавить</a>
+    <a class="navbar_link" href="search.html">Поиск</a>
+    <a class="navbar_link" href="auto_docs.html">Автоматизированное выявление объектов мониторинга</a>
+    <div class="registration">
+      <button class="reg_btn" onclick="location.href='login.html';">ВХОД</button>
+      <button class="reg_btn" onclick="location.href='registration.html';">РЕГИСТРАЦИЯ</button>
+    </div>
+  </div>
+  <div class="main">
+    <section>
+      <div class="main_text">
+        <div class="column_align_flex">
+            <p>Выберите документы, имеющие отношение к одному или нескольким объектам мониторинга.</p>
+            <p>Система попытается автоматически определить, к каким объектам относится каждый из документов,</p>
+            <p>и добавит его в досье соответствующих объектов</p>
+            <input class="item" id="documents" type="file" multiple>
+            <button class="btn" onclick="alert('Under construction')">Определить</button>
+          </div>
+      </div>
+    </section>    
+  </div>
+</body>
+<script src="website_logic.js"></script>
+</html>
