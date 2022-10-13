@@ -2,4 +2,5 @@ KNOWTEMKA
 ---------
 This is a module for an analytical information system of some sort. Don't expect much from this.
 Execute run.cmd to set up an Apache server and open the website. It uses PHP so you need a server for it
-Запустите run.cmd для того, чтобы включить сервер Apache и открыть сайт в локальной сети. Тут используется PHP, поэтому нужен сервер.
+Г‡Г ГЇГіГ±ГІГЁГІГҐ run.cmd Г¤Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГўГЄГ«ГѕГ·ГЁГІГј Г±ГҐГ°ГўГҐГ° Apache ГЁ Г®ГІГЄГ°Г»ГІГј Г±Г Г©ГІ Гў Г«Г®ГЄГ Г«ГјГ­Г®Г© Г±ГҐГІГЁ. Г’ГіГІ ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї PHP, ГЇГ®ГЅГІГ®Г¬Гі Г­ГіГ¦ГҐГ­ Г±ГҐГ°ГўГҐГ°.
+...i hate encoding
